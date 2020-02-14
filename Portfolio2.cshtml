@@ -1,0 +1,133 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <title>Portfolio (Tanveer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body {
+        font-family: Arial, Georgia, Serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }
+    .pizza{
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+    }
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="#home" class="w3-bar-item w3-button">Pizza shop</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image" src="~/Content/images/Pizza.jpg" alt="Hamburger Catering" width="1600" height="800">
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+            <h1 class="w3-xxlarge">Tanveer catering</h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="~/Content/images/tablesetting2.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">About</h1><br>
+                <h5 class="w3-center">Here since 2019 (fairly new, JK - is just for portfolio :)</h5>
+                <p class="w3-large">First of all, welcome to our website. This is Tanveer's catering. While shopping with us, you have to make sure that our leader 'Tanveer' likes you. Be kind, and honest because that is what defines Tanveer :)</p>
+                <p class="w3-large ">Now moving on, below is the complete list of pizzas that we offer. Although all of these pizzas you cannot order technically. Because its just a portfolio website. However, if you are a recruiter we cannot say no to you.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Menu Section -->
+        <div class="w3-row w3-padding-64" id="menu">
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center">Our Pizzas</h1><br>
+                <img src="~/Content/images/cheesepizza.jpg" alt="Cheese pizza" class="pizza" />
+                <h4>Cheese pizza</h4>
+                <p class="w3-text-grey">Freshly baked right out of the oven loaded with cheese, traditional sauce, and more cheese</p><br>
+
+                <img src="~/Content/images/barbequepizza.jpg" alt="Barbeque pizza" class="pizza" />
+                <h4>Barbeque pizza</h4>
+                <p class="w3-text-grey">Freshly baked loaded with onion, cheese, tomato, and full of traditional barbeue sauce</p><br>
+
+                <img src="~/Content/images/chickenpizza.jpg" alt="Chicken pizza" class="pizza" />
+                <h4>Chicken old style pizza</h4>
+                <p class="w3-text-grey">Loaded with smoked chicken, onions, and traditional pizza sauce</p><br>
+
+                <img src="~/Content/images/avacadopizza.jpg" alt="Avacado pizza" class="pizza" />
+                <h4>Avacado supreme</h4>
+                <p class="w3-text-grey">A pizza full of happiness, loaded with avacado and traditional sauce</p><br>
+
+                <img src="~/Content/images/shrimppizza.jpg" alt="Shrimp pizza" class="pizza" />
+                <h4>Shrimp invasion</h4>
+                <p class="w3-text-grey">Smoked, baked and loaded with shrimps, onions, traditional sauce</p><br>
+
+                <img src="~/Content/images/fishpizza.jpg" alt="Fish pizza" class="pizza" />
+                <h4>Fish pizza</h4>
+                <p class="w3-text-grey">Crazy about proteins? We provide a pizza full of fish, onions, tomato, and seasoning</p><br>
+
+                <img src="~/Content/images/traditionalitaly.jpg" alt="Italian pizza" class="pizza" />
+                <h4>Traditional Italy</h4>
+                <p class="w3-text-grey">Visit Italy at your home. A pizza maked in authenthic Italy style</p><br>
+
+
+            </div>
+
+            
+        </div>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-64" id="contact">
+            <h1>Contact</h1><br>
+            <p>You can contact us if you have any inquiry. However, make sure that you are kind and honest like Tanveer.</p>
+            <p class="w3-text-blue-grey w3-large"><b>Wintere Road, Papatoetoe, Auckland, NZ 2025</b></p>
+            <p>You can also contact us by phone 000000000 or email tanveersrajpal@gmail.com, or fill the form here.</p>
+            <form action="/Portfolio/Portfolio2">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+        <p>Thanks for your visit.</p>
+    </footer>
+
+</body>
+</html>
+
